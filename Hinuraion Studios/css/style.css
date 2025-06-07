@@ -1,0 +1,108 @@
+.TopButton{
+  background-color: #FCEF91;
+  border-radius: 12px;
+  border-style: none;
+  box-sizing: border-box;
+  color:  #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.TopButton:hover,
+.TopButton:focus {
+  background-color: #F082AC;
+}
+
+#logo{
+  width : 50;
+  height : 50;
+}
+.grid-portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* cuadrado perfecto */
+  overflow: hidden;
+  border-radius: 16px;
+  outline:4px solid white;
+}
+
+.GameShow {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.GameShow:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255,255,255,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  border-radius: 16px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+
+
+.SubTitle{
+  Color : white;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+      color: #fff;
+    text-shadow: #000 1px 1px 3px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+
+  background-color : #ff3300;
+
+}
