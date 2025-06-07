@@ -49,7 +49,7 @@
   width: 100%;
   aspect-ratio: 1 / 1; /* cuadrado perfecto */
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 24px;
   outline:4px solid white;
 }
 
@@ -58,7 +58,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 16px;
+  border-radius: 24px;
 }
 
 .GameShow:hover {
@@ -77,7 +77,7 @@
   align-items: center;
   justify-content: center;
   transition: 0.3s ease;
-  border-radius: 16px;
+  border-radius: 24px;
 }
 
 .container:hover .overlay {
@@ -99,6 +99,76 @@
       color: #fff;
     text-shadow: #000 1px 1px 3px;
     -webkit-font-smoothing: antialiased;
+}
+
+.Member {
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+  margin-left: auto;
+}
+
+
+.Description{
+   Color : white;
+  font-size: 20px;
+  font-align : left;
+  font-family: "Bebas Neue", sans-serif;
+      color: #fff;
+    text-shadow: #000 1px 1px 3px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.about-banner {
+  background-color: #FB9E3A; /* Naranja fuerte */
+  color: white;
+  padding: 6px 20px; /* Menos padding arriba y abajo */
+  text-align: center;
+}
+
+.staff-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* asegura que estén alineados arriba */
+  gap: 40px;
+  padding: 20px 60px;
+  background-color: #FFB22C;
+}
+
+/* Texto y links en una columna a la izquierda */
+.staff-banner .text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Descripción del miembro */
+.staff-banner .Description {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* Íconos de links alineados horizontalmente */
+.staff-banner .LinkGroup {
+  display: flex;
+  gap: 15px;
+}
+
+
+/* Imagen a la derecha */
+.staff-banner .Member {
+  width: 260px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+.LinkIcon{
+  width : 64px;
+  height : 64px;
+  float : left;
 }
 
 body{
