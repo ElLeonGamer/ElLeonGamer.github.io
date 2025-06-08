@@ -25,7 +25,7 @@
     </center>
     </br>
 
-
+<div class="fade-in">
 <div class="staff">
 
       <div class="StaffMember">
@@ -62,9 +62,31 @@ I’m always eager to keep learning, collaborate on ambitious projects, and take
   <img class="Member" src="./assets/Kai.png">
 </section>
 
+  <div class="fade-in">
+    <img src="./assets/expo.jpg" alt="Banner de mi web">
+  </div>
 
       </div>
 
 </div>
+</div>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // porcentaje visible del elemento para activar
+    });
+
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
 
 

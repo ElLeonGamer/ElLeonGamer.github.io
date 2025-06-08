@@ -24,6 +24,8 @@
     <li class="TopButton">Contact</li>
     </center>
 
+
+  <div class="fade-in">
   <div class="grid-portfolio">
 
   <div class="container">
@@ -70,5 +72,24 @@
   <!-- test commit -->
 
 </div>
+</div>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // porcentaje visible del elemento para activar
+    });
+
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
 
 
