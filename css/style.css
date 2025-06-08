@@ -175,12 +175,6 @@
 
 }
 
-.LinkIcon:focus{
-
-  transform: scale(2);
-
-}
-
 .LinkIcon:hover{
 
   transform: scale(1.5);
