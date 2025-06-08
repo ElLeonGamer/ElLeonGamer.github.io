@@ -33,6 +33,7 @@
   background-color: #F082AC;
 }
 
+
 #logo{
   width : 50;
   height : 50;
@@ -166,11 +167,18 @@
 }
 
 
-
 .LinkIcon{
   width : 64px;
   height : 64px;
   float : left;
+  transition: transform 0.3s ease;
+
+}
+
+.LinkIcon:hover{
+
+  transform: scale(1.5);
+
 }
 
 body{
