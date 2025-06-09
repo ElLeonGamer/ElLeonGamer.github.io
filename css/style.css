@@ -254,18 +254,101 @@ body{
 
 
 @media screen and (max-width: 768px) {
-  .staff-banner {
-    flex-direction: column;
-    align-items: center;
+
+  /* ------------- Layout y grids ------------- */
+
+  .grid-portfolio {
+    grid-template-columns: 1fr; /* Solo 1 columna para que no quede apretado */
+    padding: 20px; /* Menos padding para aprovechar espacio */
+    gap: 20px; /* Menor espacio entre items */
   }
 
-  .Member {
-    width: 80%;
+  /* ------------- Botones ------------- */
+
+  .TopButton {
+    font-size: 22px;      /* Texto más pequeño para caber bien */
+    padding: 8px 12px;    /* Menos padding */
+    height: auto;         /* Altura automática */
+  }
+
+  /* ------------- Banner e imágenes ------------- */
+
+  #banner {
+    width: 100%;       /* Que se adapte al ancho del dispositivo */
+    height: auto;      /* Altura proporcional */
+  }
+
+  #logo {
+    width: 40px;
+    height: 40px;       /* Más pequeño para móvil */
+  }
+
+  .container {
+    aspect-ratio: auto; /* Mejor dejar que la imagen defina la proporción */
+    width: 100%;        /* Ocupa todo el ancho del contenedor */
+    height: auto;       /* Ajuste automático */
+  }
+
+  .GameShow {
+    border-radius: 12px; /* Menor radio para que no ocupe tanto espacio */
+  }
+
+  /* ------------- Texto ------------- */
+
+  .SubTitle {
+    font-size: 28px;
+    text-align: center;
   }
 
   .Description {
+    font-size: 18px;
+    padding: 0 10px;
     text-align: center;
-    padding: 10px;
   }
+
+  /* ------------- Staff banner ------------- */
+
+  .staff-banner {
+    flex-direction: column;    /* Apilar verticalmente */
+    align-items: center;       /* Centrar contenido */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .staff-banner .Member {
+    width: 80%;                /* Imagen más pequeña y responsive */
+    max-width: 250px;          /* No exceda 250px */
+  }
+
+  .staff-banner .Description {
+    text-align: center;
+  }
+
+  .staff-banner .LinkGroup {
+    justify-content: center;   /* Centrar los iconos de links */
+    flex-wrap: wrap;           /* Permite que los iconos se vayan a otra línea si no caben */
+    gap: 12px;
+  }
+
+  .LinkIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* ------------- Íconos dentro de la imagen (resources) ------------- */
+
+  .resources {
+    position: static;          /* Quitar posición absoluta para que se adapte al flujo */
+    justify-content: center;   /* Centrar los iconos */
+    margin-top: 8px;           /* Separación respecto a la imagen */
+    gap: 6px;
+  }
+
+  .Icon {
+    width: 36px;
+    height: 36px;
+  }
+
 }
+
 
