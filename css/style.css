@@ -71,10 +71,10 @@
 .container {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1; /* cuadrado perfecto */
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 24px;
-  outline:4px solid white;
+  outline: 4px solid white;
 }
 
 .GameShow {
@@ -202,19 +202,23 @@
 
 }
 
-
-.Icon{
-  width : 64px;
-  height : 64px;
-  float : left;
-  transition: transform 0.3s ease;
-  position : absolute;
-  bottom: 2px;
+.resources {
+  position: absolute;
+  bottom: 10px;
   left: 10px;
-}.Icon:hover{
+  display: flex;
+  gap: 8px;
+  z-index: 2; /* para estar encima de la imagen */
+}
 
+.Icon {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.Icon:hover {
   transform: scale(1.2);
-
 }
 
 body{
