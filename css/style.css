@@ -253,3 +253,19 @@ body{
 }
 
 
+@media screen and (max-width: 768px) {
+  .staff-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Member {
+    width: 80%;
+  }
+
+  .Description {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
