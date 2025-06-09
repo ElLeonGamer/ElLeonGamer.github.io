@@ -279,8 +279,8 @@ body{
   }
 
   #logo {
-    width: 20px;
-    height: 20px;       /* Más pequeño para móvil */
+    width: 20;
+    height: 20;       /* Más pequeño para móvil */
   }
 
   .container {
