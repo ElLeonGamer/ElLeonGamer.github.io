@@ -285,12 +285,12 @@ body{
 
   .container {
     aspect-ratio: auto; /* Mejor dejar que la imagen defina la proporción */
-    width: 50%;        /* Ocupa todo el ancho del contenedor */
+    width: 100%;        /* Ocupa todo el ancho del contenedor */
     height: auto;       /* Ajuste automático */
   }
 
   .GameShow {
-    border-radius: 12px; /* Menor radio para que no ocupe tanto espacio */
+    border-radius: 8px; /* Menor radio para que no ocupe tanto espacio */
   }
 
   /* ------------- Texto ------------- */
