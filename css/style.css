@@ -275,12 +275,12 @@ body{
 
   /* ------------- Banner e imágenes ------------- */
 
-  #banner {
+  #banner{
     width: 100%;       /* Que se adapte al ancho del dispositivo */
     height: auto;      /* Altura proporcional */
   }
 
-  #logo {
+  #logo{
     width: 10%;
     height: auto;
   }
@@ -303,7 +303,7 @@ body{
   }
 
   .Description {
-    font-size: 18px;
+    font-size: 12px;
     padding: 0 10px;
     text-align: center;
   }
