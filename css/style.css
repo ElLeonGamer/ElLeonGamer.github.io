@@ -294,6 +294,8 @@ body{
 }
 
 
+/* === Mobile Adjustments === */
+
 @media screen and (max-width: 768px) {
 
   /* ------------- Layout y grids ------------- */
