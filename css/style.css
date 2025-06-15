@@ -392,6 +392,24 @@ body{
     height: 36px;
   }
 
+  .grid-contact {
+    grid-template-columns: 1fr; /* Stack vertically */
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .ContactIcon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .ContactInfo {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+
 }
 
 
