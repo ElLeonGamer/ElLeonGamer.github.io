@@ -127,6 +127,15 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.ContactInfo{
+  Color : white;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+      color: #fff;
+    text-shadow: #000 1px 1px 3px;
+    -webkit-font-smoothing: antialiased;
+}
+
 .Member {
   width: 240px;
   height: auto;
@@ -228,9 +237,10 @@ body{
   background-color : #ff3300;
 
 }
+
 .grid-contact {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
   gap: 30px;
   padding: 40px;
   max-width: 600px;
