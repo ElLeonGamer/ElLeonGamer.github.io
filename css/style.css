@@ -70,20 +70,6 @@
   margin: auto;
 }
 
-.grid-contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  max-width: 700px;
-  gap: 30px;
-  padding: 40px;
-  margin: auto;
-}
-
-.ContactLink{
-  place-item: center;
-
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -204,17 +190,11 @@
 }
 
 
-.ContactIcon{
-  width : 100px;
-  height : 100px;
+.LinkIcon{
+  width : 64px;
+  height : 64px;
   float : left;
   transition: transform 0.3s ease;
-
-}
-
-.ContactIcon:hover{
-
-  transform: scale(1.5);
 
 }
 
@@ -246,6 +226,33 @@
 body{
 
   background-color : #ff3300;
+
+}
+.grid-contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  justify-items: center;
+}
+
+.ContactLink {
+  display: grid;
+  place-items: center;
+}
+
+.ContactIcon{
+
+  width: 104px;
+  height: 104px;
+
+
+}.ContactIcon:hover{
+
+  transform: scale(1.2);
+  transition: 0.3s ease
 
 }
 
