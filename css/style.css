@@ -70,6 +70,20 @@
   margin: auto;
 }
 
+.grid-contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  max-width: 700px;
+  gap: 30px;
+  padding: 40px;
+  margin: auto;
+}
+
+.ContactLink{
+  place-item: center;
+
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -190,11 +204,17 @@
 }
 
 
-.LinkIcon{
-  width : 64px;
-  height : 64px;
+.ContactIcon{
+  width : 100px;
+  height : 100px;
   float : left;
   transition: transform 0.3s ease;
+
+}
+
+.ContactIcon:hover{
+
+  transform: scale(1.5);
 
 }
 

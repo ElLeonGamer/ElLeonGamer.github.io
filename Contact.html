@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Hinuraion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <center>
+    <img id="logo" src="assets/logo.png">
+
+    <h1 class="SubTitle">About us</h1>
+
+       <a href="./index.html">
+    <li class="TopButton">Home</li>
+    </a>
+    <a href="./AboutMe.html">
+    <li class="TopButton">About us</li>
+    </a>
+    <a href="./Contact.html">
+    <li class="TopButton">Contact</li>
+    </a>
+    </center>
+    </br>
+
+
+<div class="fade-in">
+
+      <section class="about-banner">
+      <h1 class="SubTitle" align = center>Contact Me</h1>
+      </section>
+
+<section class="staff-banner">
+
+  <div class="grid-contact">
+
+    <div class="ContactLink">
+    <h1 class="SubTitle" align = center>WhatsApp</h1>
+        <a href="https://wa.me/50231038085">
+        <img src="./assets/WhiteWhatsApp.png" class="ContactIcon">
+        </a>
+    </div>
+
+
+    <div class="ContactLink">
+      <h1 class="SubTitle" align = center>E-Mail</h1>
+      <a href="mailto:jeffreydeleon52@gmail.com">
+        <img src="./assets/WhiteEmail.png" class="ContactIcon" height="10px">
+      </a>
+    </div>
+
+    <div class="ContactLink">
+      <h1 class="SubTitle" align = center>Call me</h1>
+      <a href="tel:+50231038085">
+        <img src="./assets/WhitePhone.png" class="ContactIcon" height="10px">
+      </a>
+
+    </div>
+
+  </div>
+
+
+</center>
+
+</section>
+
+ <section class="about-banner">
+</br>
+</br>
+</br>
+</br>
+</br>
+</section>
+
+
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // porcentaje visible del elemento para activar
+    });
+
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+
+
